@@ -1,11 +1,27 @@
 import React from 'react'
+import { IModal } from '../Portfolio'
 import './PortfolioImg.scss'
-export const PortfolioImg = () => {
+export const PortfolioImg = (modal:IModal) => {
   return (
-    <div className="img-container">
-                        <img src="https://images.unsplash.com/photo-1488628075628-e876f502d67a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=" alt="" />
+    <div className="img-container" onClick={()=>{
+      console.log({
+        description:modal.description,
+        imgSrc:modal.imgSrc,
+        show:!modal.show,
+        title:modal.title,
+        setModal:modal.setModal,
+      })
+        modal.setModal({
+          description:modal.description,
+          imgSrc:modal.imgSrc,
+          show:!modal.show,
+          title:modal.title,
+          setModal:modal.setModal,
+        })
+    }}>
+                        <img src={modal.imgSrc} alt="" />
                         <div className="overlay"></div>
-                        <div className="button"><a href="#"> Details </a></div>
+                        <div className="button"><a > Details </a></div>
                     </div>
   )
 }
