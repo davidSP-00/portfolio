@@ -1,0 +1,72 @@
+
+@keyframes crescendo {
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.05);}
+  }
+
+
+
+  .img-container {
+    position: relative;
+    margin:5px;
+    width: 150px;
+    height: 150px;
+/*     width: 500px;
+    height: 300px; */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  
+  .img-container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  .img-container img {
+      border-radius: 3px;
+    width: 150px;
+    height: 150px;
+    left: 0;
+  }
+ 
+  .img-container:hover .title {
+    opacity: 1;
+    top: 30px;
+  }
+  
+  .button {
+    position: absolute;
+    width: 50px;
+    left:40px;
+    top: 70px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .8s ease;
+  }
+  
+  .button a {
+      
+    padding: 1px 4px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+  }
+  
+  .img-container:hover .button {
+    opacity: 1;
+  }
+  .img-container:hover img {
+    filter: brightness(50%);
+    opacity: 1;
+    animation: crescendo 0.8s  both;
+    cursor: pointer;
+    
+  }

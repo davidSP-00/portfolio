@@ -1,0 +1,34 @@
+.container-nav{
+    background-color: rgba($color:  #000000, $alpha: 0.2);
+    backdrop-filter: blur(7px);
+    border-radius:150px;
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container-nav ul{
+    display: flex;
+}
+.container-nav ul li{
+    font-size: 25px;
+    margin: auto 10px;
+}
+.container-nav ul li a{
+   color: var(--color-primary);
+}
+.container-nav ul li i{
+    cursor: pointer;
+    font-size: 0.7em;
+    margin:10px auto;
+    border-radius: 100px;
+    padding: 10px;
+}
+.container-nav ul li i:hover{
+    
+    background-color: rgba($color: #000000, $alpha: 0.3);
+}
+.container-nav ul li i.active{
+    
+    background-color: rgba($color:  #000000, $alpha: 0.5);
+}

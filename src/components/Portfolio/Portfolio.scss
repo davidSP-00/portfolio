@@ -1,0 +1,36 @@
+.portfolio-section{
+    min-height: 500px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(#1f1f38, 0.5)
+}
+.portfolio-section h2{
+    text-decoration: underline;
+text-decoration-thickness: 3px;
+text-decoration-color: var(--color-primary);
+margin-bottom: 40px;
+margin: 20px 0px 40px 0px;
+}
+.portfolio-section div{
+   margin: .5em;
+}
+
+.portfolio-container{
+    flex-wrap: wrap;
+}
+.portfolio-container{
+    max-width: 700px;
+
+}
+/* .portfolio-container img{
+    object-fit: cover;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+} */
+/* .portfolio-container img:hover{
+    animation: crescendo 0.5s  both;
+    cursor: pointer;
+    
+} */
