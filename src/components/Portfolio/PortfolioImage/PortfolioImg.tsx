@@ -9,6 +9,7 @@ export const PortfolioImg = (modal:IModal) => {
         imgSrc:modal.imgSrc,
         show:!modal.show,
         title:modal.title,
+        url:modal.url,
         setModal:modal.setModal,
       })
         modal.setModal({
@@ -16,6 +17,7 @@ export const PortfolioImg = (modal:IModal) => {
           imgSrc:modal.imgSrc,
           show:!modal.show,
           title:modal.title,
+          url:modal.url,
           setModal:modal.setModal,
         })
     }}>

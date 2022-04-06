@@ -17,15 +17,26 @@
     transform: translate(-50%, -50%);
     }
     .modal-div .text{
-        padding: 8px;
-        background-color: white;
+        padding: 10px;
+        background-color: var(--color-bg);
         width: 280px;
         text-align: center;
-        
+        color: var(--color-white);
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
+
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-div .text a{
+        color: var(--color-primary);
+      }
+    .modal-div .text h3{
+        text-decoration: underline;
     }
     .modal-div .text .detail{
+        margin: 0px 10px 0px 10px;
         text-align: left;
         font-size:14px;
     }
@@ -47,9 +58,12 @@
         .modal-div .text{
             width: 90vw;
             border-radius: 10px;
-            
+            height: 390px;
         }
         .modal-div .img{
            display: none;
+        }
+        .modal-div  i{
+            color: var(--color-white);
         }
     }
