@@ -3,27 +3,27 @@ import { IModal } from '../Portfolio'
 import './PortfolioImg.scss'
 export const PortfolioImg = (modal:IModal) => {
   return (
-    <div className="img-container" onClick={()=>{
-      console.log({
-        description:modal.description,
-        imgSrc:modal.imgSrc,
-        show:!modal.show,
-        title:modal.title,
-        url:modal.url,
-        setModal:modal.setModal,
-      })
-        modal.setModal({
-          description:modal.description,
-          imgSrc:modal.imgSrc,
-          show:!modal.show,
-          title:modal.title,
-          url:modal.url,
-          setModal:modal.setModal,
-        })
-    }}>
-                        <img src={modal.imgSrc} alt="" />
-                        <div className="overlay"></div>
-                        <div className="button"><a > Details </a></div>
-                    </div>
+   <div className=' d-flex project'>
+<div className='section d-flex'>
+  <div>
+
+  <h3>{modal.title}</h3>
+  <p>{modal.description}</p>
+  </div>
+  
+  <div>
+    <div>
+    <button className='btn btn-portfolio'> <i className="fa-solid fa-code"></i> View Code</button>
+
+    <button className='btn btn-portfolio-outline'> <i className="fa-regular fa-eye"></i> Demo</button>
+    </div>
+
+  </div>
+</div>
+<div className='section'>
+  
+  <img src={modal.imgSrc} alt="" />
+</div>
+   </div>
   )
 }

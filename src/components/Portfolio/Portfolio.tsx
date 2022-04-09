@@ -54,20 +54,18 @@ export const Portfolio = () => {
 
     return (
         <>
-            <section className='d-flex portfolio-section' id="my-projects">
+            <section className='d-flex portfolio-section justify-content-center' id="my-projects">
                 <h2>My Projects</h2>
 
-                <div>
+                <div className='title'>
                     Take a look at my latest projects.</div>
-                <div className="d-flex head-title" >
+                <div className=" head-title" style={{alignSelf:'center'}} >
 
-                    <div className='d-flex justify-content-center portfolio-container'>
                         {myProjects.map((project, index) =>
                             <PortfolioImg key={index}
                                 {...project} setModal={setModal} show={modal.show} />)}
 
-                    </div>
-
+                  
 
 
                 </div>
