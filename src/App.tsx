@@ -8,19 +8,24 @@ import { Portfolio } from './components/Portfolio/Portfolio';
 import { Header } from './components/Header/Header';
 import { Contact } from './components/Contact/Contact';
 import { Footer } from './components/Footer/Footer';
+import { SplashScreen } from './components/SplashScreen/SplashScreen';
 
 function App() {
   return (
+    <><SplashScreen></SplashScreen>
     <div className="App">
-<Header/>
-      <HeadSection/>
-      <AboutMe/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
+      
+      <Header/>
+            <HeadSection/>
+            <AboutMe/>
+            <Portfolio/>
+            <Contact/>
+            <Footer/>
+          
+           <Nav></Nav>
+          </div>
+    </>
     
-     <Nav></Nav>
-    </div>
   );
 }
 

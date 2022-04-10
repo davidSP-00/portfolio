@@ -15,7 +15,7 @@ export const Nav = () => {
             <a href="#my-projects"><i className="fa-solid fa-suitcase"></i></a>
             </li>
             <li className="">
-            <a href="#contact"><i className="fa-regular fa-message"></i></a>
+            <a href="#contact"><i className="fa-regular fa-address-book"></i></a>
             </li>
         </ul>
     </div>
