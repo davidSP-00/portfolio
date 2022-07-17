@@ -24,16 +24,35 @@
   margin:1em;
 }
 .project p{
-  margin: 1em;
+  margin: 1em 4em;
   font-size: .9em;
   color: rgb(207, 207, 207);
   font-style: italic;
+  text-align: justify;
 }
 .project .section img{
   padding: 13% 15% ;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+
+.project .section video{
+  padding: 13% 15% ;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 900px) {
+  
+  .project p{
+    margin: 1em;
+    font-size: .9em;
+    color: rgb(207, 207, 207);
+    font-style: italic;
+    text-align: justify;
+  }
 }
 @media screen and (max-width: 575px) {
   .project{
@@ -41,7 +60,6 @@
     height: auto;
     
   }
-  
 .project .section{
   width: 100%;
 }
